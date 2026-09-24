@@ -8,7 +8,7 @@ transform = v2.Compose([
               v2.ToTensor(),
               v2.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),])
 
-batch_size = 1
+batch_size = 2
 imgs_tensor = torch.zeros(batch_size, 3, 560, 560)
 
 for i in range(batch_size):
